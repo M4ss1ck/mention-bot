@@ -5,3 +5,4 @@ tgsnake
 *.txt
 prisma/dev.db
 .nvmrc
+logs
