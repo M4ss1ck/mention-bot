@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "mention-bot",
+      "script": "dist/index.js",
+      "node_args": "-r dotenv/config",
+      "watch": ["dist"],
+      "watch_delay": 1000,
+      "ignore_watch": ["node_modules", "src"],
+      "watch_options": {
+        "followSymlinks": false
+      }
+    }
+  ]
+}

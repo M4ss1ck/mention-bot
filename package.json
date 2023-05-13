@@ -1,0 +1,25 @@
+{
+  "name": "mention-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsc -p ./tsconfig.json && node -r dotenv/config ./dist/index.js",
+    "build": "tsc -p ./tsconfig.json",
+    "watch": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node -r dotenv/config ./dist/index.js\""
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "M4ss1ck",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "tgsnake": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.4"
+  }
+}
