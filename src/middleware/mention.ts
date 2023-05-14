@@ -34,3 +34,9 @@ mention.command('all', async ctx => {
         logger.error(error)
     }
 })
+
+mention.command(['help', 'start'], async ctx => {
+    ctx.replyWithHTML(`Administrators can use this bot to call all members of a group by using <code>/all</code>.\n\nOther commands <i>soon</i>™\n\nThis bot is <a href="https://github.com/M4ss1ck/mention-bot">open source</a>.`, {
+        noWebpage: true,
+    })
+})
